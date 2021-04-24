@@ -19,10 +19,12 @@ public class Sculpture extends Painting{
         return getArea() * this.depth;
     }
 
+    //Overrides and returns getDimensions Method of Painting class but multiplying by depth instead
     public String getDimensions(){
         return this.getHeight() + "\" high by " + this.getWidth() + "\" wide by " + this.depth + "\" deep; volume of " + this.getVolume() + " cubic in.";
     }
 
+    //Overrides and returns getInfo based off of the Sculpture class
     public String getInfo(){
         return "The sculptor: \n" + this.getName() + " by " + this.getAuthor() + "\nThis sculpture has the dimensions of " + this.getDimensions();
     }
